@@ -1,0 +1,275 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body {
+    font-family: "Quicksand";
+}
+
+.title {
+    font-size: 4.5em;
+    font-weight: lighter;
+    font-family: "Poppins";
+}
+
+.tableheader {
+    border-bottom: 9px solid #dddddd !important;
+    border-top: 1px solid #dddddd !important;
+}
+
+.table>tbody>tr:last-child {
+    border-bottom: 9px solid #dddddd !important;
+}
+
+header {
+    margin: 0px 0px 20px 0px !important;
+}
+
+th {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    text-transform: uppercase;
+}
+
+tr.tablerow > td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.toupper {
+    text-transform: uppercase;
+}
+
+.item-name {
+    margin-bottom: 0px;
+}
+
+.item-info {
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.actions {
+    margin-top: 60px;
+}
+
+.action-button {
+    display: inline;
+    text-decoration: none !important;
+    color: black;
+}
+
+.divider {
+    border-left: solid grey 1px;
+    margin-left: 15px;
+    display: inline;
+}
+
+.remove-btn {
+    padding-left: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.currency {
+    vertical-align: super;
+    font-size: 15px;
+}
+
+.support>h4 {
+    font-weight: bold;
+    font-family: inherit;
+    padding-bottom: 20px;
+}
+
+.support>p {
+    padding-bottom: 20px;
+}
+
+.support>p>a {
+    color: black;
+}
+
+.paysection {
+    margin-top: 13px;
+}
+
+.promocode {
+    border-bottom: 9px solid #dddddd !important;
+    padding-bottom: 15px;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cost-component {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.component-price {
+    float: right;
+}
+
+.promocode>div:nth-child(1) {
+    padding: 0px;
+}
+
+.total {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 9px solid #dddddd;
+}
+
+.cost-component-total {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.checkout {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal {
+    display: block !important;
+}
+
+.item-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-item-detail>p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal-size {
+   display: inline-block;
+    font-weight: bold;
+    border: 1px black solid;
+    padding: 3px;
+    height: 32px;
+}
+
+.modal-size-select {
+    display: inline-block;
+    width: 82px;
+    height: 31px !important;
+    padding-top: 3px;
+}
+
+.size-color {
+    margin-top: 20px;
+}
+
+.modal-qty {
+    margin-left: 48px;
+    font-weight: bold;
+    border: 1px black solid;
+    padding: 3px;
+}
+
+.modal-qty-value {
+    display: inline;
+    width: 50px;
+    height: 27px;
+}
+
+.save-items {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.see-detail {
+    margin-left: 39px;
+}
+
+.small-actions {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.smlqty {
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.discount {
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.secure {
+    vertical-align: sub;
+    padding-left: 7px;
+    font-size: 16px;
+}
+
+#mainApp button, #modal button {
+    outline: none;
+}
+
+@media (max-width:767px) {
+    .item-head {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    body {
+        padding: 0px !important;
+    }
+    .small-actions {
+        display: inline-block;
+    }
+    .promocode {
+        padding-bottom: 15px;
+        padding-left: 55px;
+    }
+    .promocode>div:nth-child(1) {
+        padding-bottom: 10px;
+    }
+    .priceSection {
+        margin: 10px;
+    }
+    .secure {
+        font-size: 14px;
+    }
+    .modal-qty {
+        margin-left: 80px;
+        font-weight: bold;
+        border: 1px black solid;
+        padding: 3px;
+    }
+    .modal-size {
+        font-weight: bold;
+        border: 1px black solid;
+        margin-left: 18px;
+    }
+    .see-detail{
+        margin-left: 70px;
+    }
+}
